@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/secondary"
+        tools:context=".HomeFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_foto"
+            android:layout_width="142dp"
+            android:layout_height="142dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/proffillee"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/home_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Fadli Adhitia Mahardika"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_foto"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/home_description"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Hidup itu kadang diatas, kadang dibawah, kadang enak, kadang engga, emang kadang kadang."
+            android:textAlignment="center"
+            android:textColor="@color/text_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_nama"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/home_hobby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="HOBBY"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_description"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_img_hobby1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/hobby1"
+            app:layout_constraintEnd_toStartOf="@+id/home_img_hobby2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_hobby" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_img_hobby2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hobby2"
+            app:layout_constraintBottom_toBottomOf="@+id/home_img_hobby1"
+            app:layout_constraintEnd_toStartOf="@+id/home_img_hobby3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_img_hobby1"
+            app:layout_constraintTop_toTopOf="@+id/home_img_hobby1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_img_hobby3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hobby3"
+            app:layout_constraintBottom_toBottomOf="@+id/home_img_hobby2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_img_hobby2"
+            app:layout_constraintTop_toTopOf="@+id/home_img_hobby2" />
+
+        <TextView
+            android:id="@+id/home_name_hobby1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="Olahraga"
+            android:textColor="@color/text_primary"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/home_name_hobby2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_img_hobby2" />
+
+        <TextView
+            android:id="@+id/home_name_hobby2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Bermain Game"
+            android:textAlignment="center"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/home_name_hobby1"
+            app:layout_constraintEnd_toStartOf="@+id/home_name_hobby3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_name_hobby1"
+            app:layout_constraintTop_toTopOf="@+id/home_name_hobby1" />
+
+        <TextView
+            android:id="@+id/home_name_hobby3"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Mendengarkan Musik"
+            android:textAlignment="center"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/home_name_hobby2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_name_hobby2"
+            app:layout_constraintTop_toTopOf="@+id/home_name_hobby2" />
+
+        <TextView
+            android:id="@+id/home_makes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="MAKANAN KESUKAAN"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_name_hobby1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_img_makes1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/makes1"
+            app:layout_constraintEnd_toStartOf="@+id/home_img_makes2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_makes" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_img_makes2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/makes2"
+            app:layout_constraintBottom_toBottomOf="@+id/home_img_makes1"
+            app:layout_constraintEnd_toStartOf="@+id/home_img_makes3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_img_makes1"
+            app:layout_constraintTop_toTopOf="@+id/home_img_makes1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_img_makes3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/makes3"
+            app:layout_constraintBottom_toBottomOf="@+id/home_img_makes2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_img_makes2"
+            app:layout_constraintTop_toTopOf="@+id/home_img_makes2" />
+
+        <TextView
+            android:id="@+id/home_name_makes1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="Ayam Geprek"
+            android:textAlignment="center"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/home_name_makes2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_img_makes2" />
+
+        <TextView
+            android:id="@+id/home_name_makes2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Nasi Goreng"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            app:layout_constraintBottom_toBottomOf="@+id/home_name_makes1"
+            app:layout_constraintEnd_toStartOf="@+id/home_name_makes3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_name_makes1"
+            app:layout_constraintTop_toTopOf="@+id/home_name_makes1" />
+
+        <TextView
+            android:id="@+id/home_name_makes3"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Telur Dadar"
+            android:textAlignment="center"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/home_name_makes2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_name_makes2"
+            app:layout_constraintTop_toTopOf="@+id/home_name_makes2" />
+
+        <TextView
+            android:id="@+id/home_mikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="MINUMAN KESUKAAN"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_name_makes1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_img_mikes1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/mikes1"
+            app:layout_constraintEnd_toStartOf="@+id/home_img_mikes2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_hobby"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_mikes" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_img_mikes2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/kopi"
+            app:layout_constraintBottom_toBottomOf="@+id/home_img_mikes1"
+            app:layout_constraintEnd_toStartOf="@+id/home_img_mikes3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_img_mikes1"
+            app:layout_constraintTop_toTopOf="@+id/home_img_mikes1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_img_mikes3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sjeruk"
+            app:layout_constraintBottom_toBottomOf="@+id/home_img_mikes2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_img_mikes2"
+            app:layout_constraintTop_toTopOf="@+id/home_img_mikes2" />
+
+        <TextView
+            android:id="@+id/home_name_mikes1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="Air Mineral"
+            android:textAlignment="center"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/home_name_mikes2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_img_mikes1" />
+
+        <TextView
+            android:id="@+id/home_name_mikes2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Kopi"
+            android:textAlignment="center"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/home_name_mikes1"
+            app:layout_constraintEnd_toStartOf="@+id/home_name_mikes3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_name_mikes1"
+            app:layout_constraintTop_toTopOf="@+id/home_name_mikes1" />
+
+        <TextView
+            android:id="@+id/home_name_mikes3"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Es Jeruk"
+            android:textAlignment="center"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/home_name_mikes2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_name_mikes2"
+            app:layout_constraintTop_toTopOf="@+id/home_name_mikes2" />
+
+        <TextView
+            android:id="@+id/home_interest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="INTEREST"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_name_mikes1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_img_interest1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/interest1"
+            app:layout_constraintEnd_toStartOf="@+id/home_img_interest2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_hobby"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_interest" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_img_interest2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/anime"
+            app:layout_constraintBottom_toBottomOf="@+id/home_img_interest1"
+            app:layout_constraintEnd_toStartOf="@+id/home_img_interest3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_img_interest1"
+            app:layout_constraintTop_toTopOf="@+id/home_img_interest1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_img_interest3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/game"
+            app:layout_constraintBottom_toBottomOf="@+id/home_img_interest2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_img_interest2"
+            app:layout_constraintTop_toTopOf="@+id/home_img_interest2" />
+
+        <TextView
+            android:id="@+id/home_name_interest1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="MCU"
+            android:textAlignment="center"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/home_name_interest2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_img_interest1" />
+
+        <TextView
+            android:id="@+id/home_name_interest2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Anime"
+            android:textAlignment="center"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/home_name_interest1"
+            app:layout_constraintEnd_toStartOf="@+id/home_name_interest3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_name_interest1"
+            app:layout_constraintTop_toTopOf="@+id/home_name_interest1" />
+
+        <TextView
+            android:id="@+id/home_name_interest3"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Game"
+            android:textAlignment="center"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/home_name_interest2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_name_interest2"
+            app:layout_constraintTop_toTopOf="@+id/home_name_interest2" />
+
+        <TextView
+            android:id="@+id/home_citacita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="CITA-CITA"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_name_interest1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_img_citacita1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/astronot"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_citacita" />
+
+        <TextView
+            android:id="@+id/home_name_citacita1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Astronot"
+            android:textAlignment="center"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_img_citacita1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
